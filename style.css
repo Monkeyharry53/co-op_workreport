@@ -1,28 +1,38 @@
 
 * {
     box-sizing: border-box;
-    margin: 0 20px;
-    box-shadow: inset;
-    
+    box-shadow: #ff671f;
   }
   
   body {
     font-family: Arial;
-    background: #f1f1f1;
-    
+    padding: 20px;
+    background: #121212;
+    color: aliceblue;
+    border-color: #ff671f;
   }
+  img{
+    width: 400px; 
+    height: 400px;
+  }
+
+  h2{
+    color: #ff671f;
+  }
+  h3{
+    color: #ff671f;  
+  }
+
   p {
-    font-size: 0.875em; /* 14px/16=0.875em */
+    font-size: 18px; /* 14px/16=0.875em */
   }
   
   /* Header/Blog Title */
-  #header {
- 
+  .header {
+    padding: 30px;
     font-size: 40px;
     text-align: center;
-    background: white;
-    text-shadow: 2px 2px 4px #9f9e9e;
-
+    background: black;
   }
   
   /* Create two unequal columns that floats next to each other */
@@ -36,24 +46,21 @@
     align-items: center;
     justify-items: center;
   }
-  img{
-    margin-top: 15px;
-    box-shadow: 3px;
-    border-radius: 4px;
-  }
-  /* Right column */
-  /* .rightcolumn {
-    float: left;
-    width: 25%;
-    padding-left: 20px;
-  }
+  
 
-
+  /* Fake image */
+  .fakeimg {
+    background-color: orange;
+    width: 100%;
+    padding: 20px;
+  }
+  
   /* Add a card effect for articles */
   .card {
-    background-color: white;
+    background-color: #121212;
+    color: #ddd;
+    padding: 20px;
     margin-top: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   
   /* Clear floats after the columns */
@@ -61,14 +68,16 @@
     content: "";
     display: table;
     clear: both;
-    
   }
   
-h2, p{
- padding: 10px; 
-}
-
-
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #121212;
+    margin-top: 20px;
+  }
+  
   /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 800px) {
     .column {
